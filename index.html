@@ -4,10 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FORM ĐĂNG KÝ</title>
+    <style>
+        input:required:invalid, 
+    textarea:required:invalid {
+        border: 2px solid #b30000;
+        outline: none;
+    </style>
     </head>
     <body>
         <h2>Form đăng ký sinh viên</h2>
-        <form action="#" method="POST"></form>
+        <form action="#" method="POST">
         <div>
             <label>Họ tên:</label>
             <input type="text" name="fullname" placeholder="Họ và tên" required>
@@ -40,7 +46,7 @@
             <label>Ngành học:</label>
             <select name="major">
                 <option value="">-- Chọn ngành học --</option>
-                
+
                 <option value="CNTT">Công nghệ thông tin</option>
 
                 <option value="Kinh tế">Kinh tế</option>
